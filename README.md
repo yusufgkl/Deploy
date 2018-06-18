@@ -1,6 +1,8 @@
 # Deploy
 ## Mobile deploying cheat sheet for ionic 3
+
 ### Build
+
 #### Android
 ```rm -rf platforms; ionic cordova build android --prod --release```
 
@@ -8,10 +10,12 @@
 ```rm -rf platforms; ionic cordova build ios --prod```
 
 ### Deploy
+
 #### Android
 1. ```./zipalign -v 4 [appname-unsigned].apk [appname-signed].apk ```
 2. ```java -jar apk-signer-1.8.5.jar verify [appname-signed].apk ```
 3. ```./zipalign -v 4 [appname-signed-UNALIGNED].apk [appname-signed-ALIGNED].apk ```
+4. Upload the signed and aligned apk via the Google Play Console.
 
 #### iOS
 1. ```open ./platforms/ios/[appname].xcodeproj```
