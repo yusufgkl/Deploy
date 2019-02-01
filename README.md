@@ -1,4 +1,5 @@
 # Deploy
+![Build Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ## Mobile deploying cheat sheet for ionic 3
 
 ### Build
